@@ -19,7 +19,7 @@
 .typing-demo {
   color: yellow;
   width: 16ch;
-  animation: typing 2.8s steps(16), blink .5s step-end infinite alternate;
+  animation: typing 2.6s steps(16), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;

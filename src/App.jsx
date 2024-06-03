@@ -76,7 +76,7 @@ function App() {
       <My3DModelThree />
       
       
-      <h1 className='card block' style={{ marginTop: '390px', userSelect: 'none', marginBottom: '25px', border: 'none'}}>Projects</h1>
+      <h1 className='card block' style={{ marginTop: '420px', userSelect: 'none', marginBottom: '25px', border: 'none'}}>Projects</h1>
       <div>
       <button className="projectsButton">
         About us

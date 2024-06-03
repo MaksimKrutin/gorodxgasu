@@ -27,6 +27,7 @@
 }
 
 .card--stats {
+  font-size: 2em;
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
