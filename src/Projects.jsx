@@ -47,11 +47,11 @@ const ModelWindow = ({ isOpen, onClose, modelPath }) => {
         <div>
             <button className="projectsButton prev-button" onClick={onPrev}>
                 {/* <img src={isDarkMode ? "/arrow_b_b.svg" : "/arrow_b.svg"} /> */}
-                <img src="/arrow_back_grey.svg" />
+                <img src="arrow_back_grey.svg" />
             </button>
             <button className="projectsButton forw-button" onClick={onNext}>
                 {/* <img src={isDarkMode ? "/arrow_f_b.svg" : "/arrow_f.svg"} /> */}
-                <img src="/arrow_forward_grey.svg" />
+                <img src="arrow_forward_grey.svg" />
             </button>
         </div>
         
