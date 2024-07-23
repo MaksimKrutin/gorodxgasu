@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame} from '@react-three/fiber'
 import { useFBX, OrbitControls } from '@react-three/drei'
+import './model.css'
 
 
 
@@ -40,18 +41,20 @@ const RotatingModel = ({ isRotating, setIsRotating }) => {
 
     return (
   
-    <div style={{ 
+    <div 
+    // style={{ 
 
-      width: '33%', 
-      height: '360px', 
-      zIndex: 1, 
-      position: 'absolute', 
-      left: '0', 
-      top: '200px', 
-      overflow: 'visible',
+    //   width: '33%', 
+    //   height: '360px', 
+    //   zIndex: 1, 
+    //   position: 'absolute', 
+    //   left: '0', 
+    //   top: '200px', 
+    //   overflow: 'visible',
       
 
-      }} className="model">
+    //   }} 
+    className="model">
       <Canvas>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.1} />

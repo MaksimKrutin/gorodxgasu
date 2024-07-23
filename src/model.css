@@ -1,0 +1,29 @@
+.model {
+    width: 33%;
+    height: 360px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    overflow: visible;
+  }
+  
+  /* Media query for tablets */
+  @media (max-width: 768px) {
+    .model {
+      width: 50%;
+      height: 300px;
+      top: 150px;
+    }
+  }
+  
+  /* Media query for mobile phones */
+  @media (max-width: 480px) {
+    .model {
+      width: 90%;
+      height: 250px;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }

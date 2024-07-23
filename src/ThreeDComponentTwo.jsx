@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame} from '@react-three/fiber'
 import { useFBX, OrbitControls } from '@react-three/drei'
+import './modelTwo.css'
 
 const RotatingModelTwo = ({isRotating, setIsRotating}) => {
   let fbx = useFBX('nodeMortgage.fbx')
@@ -43,17 +44,19 @@ const RotatingModelTwo = ({isRotating, setIsRotating}) => {
   const My3DModelTwo = () => {
     const[isRotating, setIsRotating] = useState(true);
     return (
-    <div style={{ 
+    <div 
+    // style={{ 
 
-      width: '33%', 
-      height: '360px', 
-      zIndex: 1, 
-      position: 'absolute', 
-      left: '33%',
-      top: '200px',  
-      overflow: 'visible',
+    //   width: '33%', 
+    //   height: '360px', 
+    //   zIndex: 1, 
+    //   position: 'absolute', 
+    //   left: '33%',
+    //   top: '200px',  
+    //   overflow: 'visible',
       
-      }} className="model">
+    //   }} 
+      className="model">
       <Canvas>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.1} />
