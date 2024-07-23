@@ -60,7 +60,7 @@ const ModelWindow = ({ isOpen, onClose, modelPath }) => {
             <span>{nameCard}</span>
           </div>
           <div className="card--buttons">
-          <button className="projectsButton" style={{ marginLeft: '15px' }}>
+          <button className="projectsButton" style={{ marginLeft: '40px' }}>
               Information
             </button>
             <button className="projectsButton" onClick={handleToggleWindow}>

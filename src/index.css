@@ -144,3 +144,18 @@ button:focus-visible {
   top: 20px;
   
 }
+
+/* mobile screen */
+.projectsButton, .testsButton {
+  flex: 1;
+  max-width: 150px;
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  touch-action: manipulation;
+}
+
+.projectsButton img, .testsButton img {
+  pointer-events: none;
+}
