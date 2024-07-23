@@ -33,3 +33,24 @@
     from {width: 0;}}
   @keyframes blink {
     50% {border-color: transparent;}}
+
+
+
+/* mobile screen */
+
+    @media (max-width: 768px) {
+      .typing-demo {
+        font-size: 6rem;
+      }
+    }
+    
+    /* Media query for mobile phones */
+    @media (max-width: 480px) {
+      .typing-demo {
+        font-size: 4rem;
+      }
+    
+      .wrapper {
+        top: 150px;
+      }
+    }
