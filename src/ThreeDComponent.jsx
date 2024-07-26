@@ -41,20 +41,9 @@ const RotatingModel = ({ isRotating, setIsRotating }) => {
 
     return (
   
-    <div 
-    // style={{ 
-
-    //   width: '33%', 
-    //   height: '360px', 
-    //   zIndex: 1, 
-    //   position: 'absolute', 
-    //   left: '0', 
-    //   top: '200px', 
-    //   overflow: 'visible',
-      
-
-    //   }} 
-    className="model">
+    <div className="model"
+    style={{left: '0'}} 
+    >
       <Canvas>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.1} />

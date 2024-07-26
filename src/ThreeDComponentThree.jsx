@@ -36,19 +36,9 @@ const RotatingModelThree = ({isRotating, setIsRotating}) => {
   const My3DModelThree = () => {
     const[isRotating, setIsRotating] = useState(true);
     return (
-    <div 
-    // style={{ 
-
-    //   width: '33%', 
-    //   height: '360px', 
-    //   zIndex: 1, 
-    //   position: 'absolute', 
-    //   left: '66%',
-    //   top: '200px',  
-    //   overflow: 'visible',
-      
-    //   }} 
-      className="model">
+    <div className="model"
+    style={{left: '66%'}} 
+    >
       <Canvas>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.1} />
