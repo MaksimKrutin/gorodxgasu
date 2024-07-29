@@ -18,7 +18,7 @@
   }
   
   /* Media query for mobile phones */
-  @media (max-width: 480px) {
+  @media (max-width: 393px) {
     .model {
       width: 90%;
       height: 250px;

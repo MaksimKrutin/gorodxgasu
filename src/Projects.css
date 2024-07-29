@@ -2,22 +2,26 @@
   padding-top: 50px;
   position: relative; 
   /* display: inline-block; */
-
-/* mobile screen */
+}
+  @media (max-width: 393px) {
+    .card-container {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+    }
 }
 
 .card {
   width: 100%; 
+}
 
-/* mobile screen */
+@media (max-width: 393px) {
+  .card {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  
+  }
 }
 
 .card--image {
@@ -35,14 +39,15 @@
   right: 0;
   background-color: rgb(255, 255, 255, 0.8);
   padding: 10px;
+}
 
-
-/* mobile screen */
+  @media (max-width: 393px) {
+    .card--content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-
+    }
 }
 
 .card--stats {

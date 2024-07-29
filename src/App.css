@@ -12,6 +12,15 @@
   transition: filter 300ms;
 }
 
+/* Media query for mobile phones */
+@media (max-width: 393px) {
+  .logo {
+    width: 50%;
+    height: 3em;
+    transform: translateX(-50%);
+  }
+}
+
 
 .container {
   height: 6em;

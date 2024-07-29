@@ -144,8 +144,7 @@ button:focus-visible {
   top: 20px;
   
 }
-
-/* mobile screen */
+@media (max-width: 393px) {
 .projectsButton, .testsButton {
   flex: 1;
   max-width: 150px;
@@ -155,7 +154,15 @@ button:focus-visible {
   border-radius: 4px;
   touch-action: manipulation;
 }
+}
 
 .projectsButton img, .testsButton img {
   pointer-events: none;
+}
+
+.cardblock {
+  margin-top: 420px;
+  user-select: none; 
+  margin-bottom: 25px; 
+  border: none;
 }
