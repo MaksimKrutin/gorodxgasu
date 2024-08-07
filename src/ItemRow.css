@@ -1,0 +1,23 @@
+.item-row {
+    display: flex;
+    justify-content: space-between; /* Equal space between items */
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .item-row > div {
+    flex: 1; /* Allow items to grow and shrink equally */
+    max-width: 30%; /* Ensure the items don't exceed a certain width */
+  }
+  
+  @media (max-width: 768px) {
+    .item-row {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+  
+    .item-row > div {
+      max-width: 100%; /* Allow full width on smaller screens */
+      margin-bottom: 20px; /* Add margin between stacked items */
+    }
+  }

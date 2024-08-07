@@ -7,12 +7,14 @@ import datalogos from './dataLogos.jsx'
 import { gsap } from 'gsap'
 import ScrollToPlugin from 'gsap/ScrollToPlugin'
 import RunningLine1 from './runningLine1.jsx'
-import My3DModel from './ThreeDComponent.jsx'
-import My3DModelTwo from './ThreeDComponentTwo.jsx'
-import My3DModelThree from './ThreeDComponentThree.jsx'
+// import My3DModel from './ThreeDComponent.jsx'
+// import My3DModelTwo from './ThreeDComponentTwo.jsx'
+// import My3DModelThree from './ThreeDComponentThree.jsx'
 import { ThemeProvider, useTheme } from './themeContext.jsx';
 import ThemeToggle from './toggleButton.jsx';
 import './darkLightMode.css'
+
+import ItemRow from './3DComponents.jsx';
 
 
 
@@ -61,7 +63,7 @@ function App() {
   return (
     <ThemeProvider>
 
-    <div style={{ margin: '2px'}}>
+    <div>
 
       {logos}
       
@@ -69,11 +71,15 @@ function App() {
 
       <RunningLine1 />
 
-      <My3DModel />
+
+      <ItemRow />
+        
+      {/* <My3DModel />
       
       <My3DModelTwo />
 
-      <My3DModelThree />
+      <My3DModelThree /> */}
+      
       
       
       <h1 className="cardblock">Projects</h1>

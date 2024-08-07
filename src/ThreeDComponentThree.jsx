@@ -36,16 +36,14 @@ const RotatingModelThree = ({isRotating, setIsRotating}) => {
   const My3DModelThree = () => {
     const[isRotating, setIsRotating] = useState(true);
     return (
-    <div className="model"
-    style={{left: '66%'}} 
-    >
+    // <div className="model">
       <Canvas>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.1} />
         <directionalLight color="grey" position={[10, 10, 10]} />
         <RotatingModelThree isRotating={isRotating} setIsRotating={setIsRotating}/>
       </Canvas>
-    </div>
+    // </div>
   )
 }
   

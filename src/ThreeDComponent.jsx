@@ -41,9 +41,7 @@ const RotatingModel = ({ isRotating, setIsRotating }) => {
 
     return (
   
-    <div className="model"
-    style={{left: '0'}} 
-    >
+    // <div className="model">
       <Canvas>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.1} />
@@ -51,7 +49,7 @@ const RotatingModel = ({ isRotating, setIsRotating }) => {
         <RotatingModel isRotating={isRotating} 
         setIsRotating={setIsRotating} />
       </Canvas>
-    </div>
+    /* </div> */
   )
 }
   export default My3DModel;

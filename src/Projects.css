@@ -32,6 +32,13 @@
   object-fit: cover;
 }
 
+@media (max-width: 393px) {
+  .card--image {
+    width: 350px;
+    height: 200px; 
+  }
+}
+
 .card--content {
   position: absolute; 
   bottom: 150px;
