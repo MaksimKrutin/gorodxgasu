@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame} from '@react-three/fiber'
 import { useFBX, OrbitControls } from '@react-three/drei'
-import './modelThree.css'
+import './ItemRow.css'
+// import './modelThree.css'
 
 const RotatingModelThree = ({isRotating, setIsRotating}) => {
   let fbx = useFBX('nodeTube.fbx')
@@ -36,7 +37,7 @@ const RotatingModelThree = ({isRotating, setIsRotating}) => {
   const My3DModelThree = () => {
     const[isRotating, setIsRotating] = useState(true);
     return (
-    // <div className="model">
+    // <div className="item-row">
       <Canvas>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.1} />

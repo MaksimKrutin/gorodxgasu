@@ -7,14 +7,11 @@ import datalogos from './dataLogos.jsx'
 import { gsap } from 'gsap'
 import ScrollToPlugin from 'gsap/ScrollToPlugin'
 import RunningLine1 from './runningLine1.jsx'
-// import My3DModel from './ThreeDComponent.jsx'
-// import My3DModelTwo from './ThreeDComponentTwo.jsx'
-// import My3DModelThree from './ThreeDComponentThree.jsx'
 import { ThemeProvider, useTheme } from './themeContext.jsx';
 import ThemeToggle from './toggleButton.jsx';
 import './darkLightMode.css'
-
 import ItemRow from './3DComponents.jsx';
+import './ItemRow.css';
 
 
 
@@ -61,9 +58,8 @@ function App() {
   })
     
   return (
-    <ThemeProvider>
 
-    <div>
+    <ThemeProvider>
 
       {logos}
       
@@ -71,16 +67,7 @@ function App() {
 
       <RunningLine1 />
 
-
       <ItemRow />
-        
-      {/* <My3DModel />
-      
-      <My3DModelTwo />
-
-      <My3DModelThree /> */}
-      
-      
       
       <h1 className="cardblock">Projects</h1>
       <div>
@@ -98,18 +85,15 @@ function App() {
       </div>
     
       <div ref={ artRef1 }>
-      {/* <div ref={ artRef1 } className={isDarkMode ? 'dark-mode' : 'light-mode'}> */}
-        
+
         <Card 
           nameCard={cards[currentCardIndex].nameCard}
           imageUrl={cards[currentCardIndex].imageUrl}
           modelName={cards[currentCardIndex].modelName}
           onPrev={handlePrev}
           onNext={handleNext} 
-          // isDarkMode={isDarkMode}
         />
 
-      </div>
 
       <section ref={ artRef2 } style={{ marginTop: '650px'}}>
 

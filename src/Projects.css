@@ -1,70 +1,172 @@
+.model-window {
+  position: absolute;
+  margin-top: 20px;
+  top: 100%; 
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 1000px; 
+  height: 600px; 
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgb(4, 46, 15);
+  transition: opacity 0.3s ease;
+  opacity: 0; 
+  pointer-events: none; 
+}
+
+.model-window.open {
+  opacity: 1; /* Show the model window when open */
+  pointer-events: auto; /* Capture mouse events when open */
+}
+
+.model-content {
+  width: 1000px;
+  height: 600px;
+}
+
 .card-container {
   padding-top: 50px;
-  position: relative; 
-  /* display: inline-block; */
-}
-  @media (max-width: 393px) {
-    .card-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto; /* Center the card-container horizontally */
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-    }
+  align-items: center; /* Center child elements vertically */
+}
+
+@media (max-width: 393px) {
+  .card-container {
+    padding-top: 20px;
+    justify-content: center; /* Center the container content */
+  }
 }
 
 .card {
-  width: 100%; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the card content */
+  position: relative;
 }
 
 @media (max-width: 393px) {
   .card {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
+    max-width: 350px;
   }
 }
 
 .card--image {
   border-radius: 30px;
-  flex-wrap: wrap;
-  width: 800px;
-  height: 500px;
+  width: 100%; /* Make the image responsive */
+  max-width: 800px;
+  max-height: 500px;
+  height: auto;
   object-fit: cover;
 }
 
 @media (max-width: 393px) {
   .card--image {
-    width: 350px;
-    height: 200px; 
+    width: 100%;
+    max-width: 350px;
+    height: auto; 
   }
 }
 
-.card--content {
-  position: absolute; 
-  bottom: 150px;
-  left: 0;
-  right: 0;
-  background-color: rgb(255, 255, 255, 0.8);
-  padding: 10px;
+.projectsButton {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-  @media (max-width: 393px) {
-    .card--content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-    }
+.projectsButton:hover {
+  border-color: yellow;
+}
+
+.projectsButton img {
+  pointer-events: none;
+}
+
+@media (max-width: 393px) {
+  .projectsButton {
+    flex: 1;
+    max-width: 150px;
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    touch-action: manipulation;
+  }
+  }
+
+.forw-button {
+  position: absolute;
+  left: 900px;
+  top: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.prev-button {
+  position: absolute;
+  right: 900px;
+  top: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.prev-button img,
+.forw-button img {
+  width: 50px;
+  border: none; 
+}
+
+.card--content {
+  position: absolute; /* Change to relative to avoid overlay issues */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center; /* Center the text and buttons */
+  width: 100%;
+  margin-top: 200px;
+}
+
+@media (max-width: 393px) {
+  .card--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card--stats {
   font-size: 2em;
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
   margin-bottom: 10px;
 }
 
 .card--buttons {
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 10px;
 }
+
+@media (max-width: 393px) {
+  .card--buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+

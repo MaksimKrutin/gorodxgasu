@@ -1,13 +1,13 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame} from '@react-three/fiber'
 import { useFBX, OrbitControls } from '@react-three/drei'
-import './modelTwo.css'
+// import './modelTwo.css'
 
 const RotatingModelTwo = ({isRotating, setIsRotating}) => {
   let fbx = useFBX('nodeMortgage.fbx')
   let modelRef = useRef();
   const isPointerDown = useRef(false);
-
+  
   useFrame(() => {
     if (isRotating && !isPointerDown.current && modelRef.current) {
       modelRef.current.rotation.y += 0.01;
@@ -45,7 +45,7 @@ const RotatingModelTwo = ({isRotating, setIsRotating}) => {
     const[isRotating, setIsRotating] = useState(true);
     return (
     // <div className="model">
-      <Canvas>
+      <Canvas> 
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.1} />
         <directionalLight color="grey" position={[10, 10, 10]} />

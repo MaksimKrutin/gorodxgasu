@@ -4,9 +4,7 @@ import './runningLine1.css';
 
 function RunningLine1() {
 return (
-        <div className="wrapper">
-        <div className="typing-demo">GorodxGasu demo!</div>
-        </div>
+        <div className="wrapper typing-demo">GorodxGasu demo!</div>
 
 );
 }

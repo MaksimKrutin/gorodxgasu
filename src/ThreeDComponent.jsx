@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame} from '@react-three/fiber'
 import { useFBX, OrbitControls } from '@react-three/drei'
-import './model.css'
+// import './model.css'
 
 
 
@@ -9,11 +9,12 @@ const RotatingModel = ({ isRotating, setIsRotating }) => {
   let fbx = useFBX('nodeCorner.fbx');
   let modelRef = useRef();
   const isPointerDown = useRef(false);
+  fbx.scale.set(0.9, 0.9, 0.9);
 
   useFrame(() => {
     if (isRotating && !isPointerDown.current && modelRef.current) {
-      modelRef.current.rotation.y += 0.01;
       modelRef.current.rotation.z += 0.01;
+      modelRef.current.rotation.y += 0.01;
     }
   });
 
@@ -41,7 +42,7 @@ const RotatingModel = ({ isRotating, setIsRotating }) => {
 
     return (
   
-    // <div className="model">
+    
       <Canvas>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.1} />
@@ -49,7 +50,6 @@ const RotatingModel = ({ isRotating, setIsRotating }) => {
         <RotatingModel isRotating={isRotating} 
         setIsRotating={setIsRotating} />
       </Canvas>
-    /* </div> */
   )
 }
   export default My3DModel;

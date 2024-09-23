@@ -8,10 +8,17 @@ import './ItemRow.css';
 
 const ItemRow = () => {
   return (
-    <div className="item-row">
-      <My3DModel />
-      <My3DModelTwo />
-      <My3DModelThree />
+    <div className="item-row"> 
+    
+      <div className="item-row">
+        <My3DModel />
+      </div>
+      <div className="item-row">
+        <My3DModelTwo />
+      </div>
+      <div className="item-row">
+        <My3DModelThree />
+      </div>
     </div>
   );
 };

@@ -1,23 +1,27 @@
 .item-row {
     display: flex;
-    justify-content: space-between; /* Equal space between items */
-    align-items: center; /* Align items vertically */
+    justify-content: space-between;
+    align-items: center; 
     padding: 20px;
     gap: 20px;
   }
   
   .item-row > div {
-    flex: 1; /* Allow items to grow and shrink equally */
-    max-width: 30%; /* Ensure the items don't exceed a certain width */
+    flex: 1; 
+    width: 360px;
+    /* max-width: 360px; */
+    height: 360px;
   }
   
   @media (max-width: 768px) {
     .item-row {
-      flex-direction: column; /* Stack items vertically on smaller screens */
+      flex-direction: column;
     }
   
     .item-row > div {
-      max-width: 100%; /* Allow full width on smaller screens */
-      margin-bottom: 20px; /* Add margin between stacked items */
+      width: 100px;
+      /* max-width: 100px;  */
+      margin-bottom: 20px; 
+      height: 100px;
     }
   }
